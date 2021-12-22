@@ -1,12 +1,18 @@
 import React from "react";
 import "../styles/Catagories.css";
+import MiddleButtons from "../components/MiddleButtons";
 
 export default function Catagories() {
+  const buttons = [
+    { class: "active", text: "Photo & Videos" },
+    { text: "Map" },
+    { text: "360 View" },
+  ];
   return (
     <div id="catagories">
-      <button className="active">Photo & Videos</button>
-      <button>Map</button>
-      <button>360 View</button>
+      {buttons.map((btn) => (
+        <MiddleButtons text={btn.text} classes={btn.class} />
+      ))}
     </div>
   );
 }
