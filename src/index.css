@@ -9,3 +9,7 @@ body {
   padding: 0px;
   user-select: none;
 }
+
+* {
+  font-family: "Open Sans", sans-serif !important;
+}
