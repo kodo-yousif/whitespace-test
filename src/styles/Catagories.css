@@ -1,4 +1,30 @@
 #catagories {
-  margin: 15px;
-  background-color: red;
+  margin: 20px;
+  display: flex;
+  align-items: baseline;
+}
+#catagories > * {
+  margin-right: 30px;
+  font-size: 17px;
+  color: #2c463f;
+}
+#catagories > *:hover {
+  cursor: pointer;
+}
+
+#catagories button {
+  border: none;
+  background: none;
+}
+#catagories button.active {
+  color: #d91323;
+  background-color: white;
+  border: 2px solid #e0e0e0;
+  border-radius: 12px;
+  padding: 8px 20px;
+  text-align: center;
+}
+
+#catagories .active {
+  font-size: 18px !important;
 }
