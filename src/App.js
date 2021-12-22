@@ -1,8 +1,10 @@
+import Navigation from "./containers/Navigation";
+
 function App() {
   return (
-    <center>
-      <h1>ant design added</h1>
-    </center>
+    <>
+      <Navigation />
+    </>
   );
 }
 
