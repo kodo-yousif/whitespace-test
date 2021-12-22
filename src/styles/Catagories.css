@@ -5,7 +5,7 @@
 }
 #catagories > * {
   margin-right: 30px;
-  font-size: 17px;
+  font-size: 16px;
   color: #2c463f;
 }
 #catagories > *:hover {
@@ -23,8 +23,21 @@
   border-radius: 12px;
   padding: 8px 20px;
   text-align: center;
+  font-size: 17px !important;
 }
 
-#catagories .active {
-  font-size: 18px !important;
+@media only screen and (max-width: 425px) {
+  #catagories {
+    margin: 20px 12px;
+  }
+  #catagories > * {
+    margin-right: 10px;
+    font-size: 13px;
+  }
+  #catagories button.active {
+    border: 2px solid #e0e0e0;
+    border-radius: 5px;
+    padding: 8px 10px;
+    font-size: 11px !important;
+  }
 }
