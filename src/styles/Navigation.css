@@ -1,5 +1,4 @@
 #navigation {
-  color: red;
   background: #f8f8f8;
   border: 1px solid #d1d1d1;
   display: flex;
@@ -44,4 +43,20 @@
 
 .icons:hover {
   cursor: pointer;
+}
+
+@media only screen and (max-width: 425px) {
+  #navigation {
+    padding: 10px;
+  }
+  #navigation span {
+    font-size: 20px;
+  }
+  .nav_right img {
+    width: 15px;
+    height: 15px;
+  }
+  .nav_right span {
+    font-size: 11px !important;
+  }
 }
