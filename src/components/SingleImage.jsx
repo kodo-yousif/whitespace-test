@@ -8,6 +8,12 @@ export default function SingleImage(props) {
       effect="blur"
       src={props.src}
       alt={`taken by author ${props.author}`}
+      onClick={() => {
+        if (props.Switch) {
+          props.Select([props.id, props.id + 1, props.id + 2]);
+          props.Switch(true);
+        }
+      }}
     />
   );
 }

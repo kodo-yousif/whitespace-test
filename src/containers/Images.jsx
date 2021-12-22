@@ -2,9 +2,12 @@ import React, { useEffect, useState } from "react";
 import ImagesComponent from "../components/Images";
 import "../styles/Images.css";
 import axios from "axios";
+import CustomModal from "../components/CustomModal";
 
 export default function Images() {
   const [images, setImages] = useState([]);
+  const [ModalSwitch, SetSwitch] = useState(false);
+  const [Selected, SetSelect] = useState([]);
   useEffect(startUp, []);
 
   function startUp() {
@@ -15,7 +18,16 @@ export default function Images() {
 
   return (
     <div style={{ paddingBottom: 20 }}>
-      <ImagesComponent album={images} />
+      <ImagesComponent
+        album={images}
+        SetSwitch={SetSwitch}
+        SetSelect={SetSelect}
+      />
+      <CustomModal
+        SetSwitch={SetSwitch}
+        switch={ModalSwitch}
+        Selected={Selected}
+      />
     </div>
   );
 }
