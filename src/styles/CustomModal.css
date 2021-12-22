@@ -1,3 +1,20 @@
 .customModal .ant-modal-header {
   display: none;
 }
+
+.customModal .ant-modal-body {
+  padding: 0px;
+  margin: 0px;
+}
+
+.customModal .ant-modal {
+  border-radius: 5px !important;
+  overflow: hidden !important;
+}
+
+.customModal #navigation > span {
+  font-weight: bold;
+  transform: translateY(15px);
+  font-size: 34px;
+  /* display: none; */
+}

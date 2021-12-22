@@ -2,7 +2,7 @@ import React, { useEffect, useState } from "react";
 import ImagesComponent from "../components/Images";
 import "../styles/Images.css";
 import axios from "axios";
-import CustomModal from "../components/CustomModal";
+import CustomModal from "./CustomModal";
 
 export default function Images() {
   const [images, setImages] = useState([]);

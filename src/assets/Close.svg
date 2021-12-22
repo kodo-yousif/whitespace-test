@@ -1,0 +1,9 @@
+<svg id="Component_2_1" data-name="Component 2 – 1" xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 32 32">
+  <g id="Component_1_1" data-name="Component 1 – 1">
+    <rect id="Rectangle_3378" data-name="Rectangle 3378" width="32" height="32" rx="6" fill="#d91323"/>
+  </g>
+  <g id="Group_4428" data-name="Group 4428" transform="translate(1211.719 -1326.09) rotate(45)">
+    <line id="Line_5" data-name="Line 5" y2="11.609" transform="translate(103.5 1788.695)" fill="none" stroke="#fff" stroke-linecap="round" stroke-width="1.5"/>
+    <line id="Line_6" data-name="Line 6" y2="11.609" transform="translate(109.305 1794.5) rotate(90)" fill="none" stroke="#fff" stroke-linecap="round" stroke-width="1.5"/>
+  </g>
+</svg>

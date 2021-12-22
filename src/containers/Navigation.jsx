@@ -2,11 +2,14 @@ import React from "react";
 import NavigationRightIcons from "../components/NavigationRightIcons";
 import "../styles/Navigation.css";
 
-export default function Navigation() {
+export default function Navigation(props) {
   return (
-    <div id="navigation">
+    <div id="navigation" style={props.MoreStyle}>
       <span>Empire World</span>
-      <NavigationRightIcons />
+      <NavigationRightIcons
+        additional={props.additional}
+        switch={props.switch}
+      />
     </div>
   );
 }

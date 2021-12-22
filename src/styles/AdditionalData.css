@@ -1,0 +1,10 @@
+.additional {
+  background: #f8f8f8;
+  border: 1px solid #d1d1d1;
+  padding: 10px 60px;
+  border-top: none;
+  padding-top: 15px;
+  padding-bottom: 45px;
+  font-size: 11px;
+  color: #2c463f !important;
+}

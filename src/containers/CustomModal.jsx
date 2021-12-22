@@ -1,6 +1,8 @@
 import React from "react";
-import { Modal } from "antd";
+import { Modal, Switch } from "antd";
 import "../styles/CustomModal.css";
+import Navigation from "./Navigation";
+import AdditionalData from "../components/AdditionalData";
 
 export default function CustomModal(props) {
   return (
@@ -13,8 +15,14 @@ export default function CustomModal(props) {
       footer={false}
       width="90vw"
     >
+      <Navigation
+        switch={props.SetSwitch}
+        additional={true}
+        MoreStyle={{ border: "none" }}
+      />
+      <AdditionalData />
       {props.Selected.map((el) => (
-        <div>{el}</div>
+        <div style={{}}>{el}</div>
       ))}
     </Modal>
   );
