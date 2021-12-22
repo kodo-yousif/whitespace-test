@@ -1,3 +1,18 @@
 #navigation {
   color: red;
+  background: #f8f8f8;
+  border: 1px solid #d1d1d1;
+  display: flex;
+  justify-content: space-between;
+  align-content: center;
+  align-items: center;
+  padding: 10px 60px;
+}
+
+#navigation span {
+  color: #2c463f;
+  font-size: 25px;
+}
+* {
+  font-family: "Open Sans", sans-serif !important;
 }
