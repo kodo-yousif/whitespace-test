@@ -4,13 +4,14 @@ import "react-lazy-load-image-component/src/effects/blur.css";
 import "../styles/Images.css";
 import axios from "axios";
 
-export default function Images() {
+function Images() {
   const [images, setImages] = useState([]);
   useEffect(startUp, []);
 
   function startUp() {
     axios.get("https://picsum.photos/v2/list?page=2&limit=10").then((res) => {
       console.log("done");
+      delete res.data.download_url;
       setImages(res.data);
     });
   }
@@ -21,9 +22,7 @@ export default function Images() {
         {images.map((image) => (
           <LazyLoadImage
             key={image.id}
-            preview={false}
             effect="blur"
-            //   loading="lazy"
             src={image.download_url}
             alt={`taken by author ${image.author}`}
           />
@@ -32,3 +31,4 @@ export default function Images() {
     </div>
   );
 }
+export default Images;
