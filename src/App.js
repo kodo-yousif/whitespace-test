@@ -1,7 +1,7 @@
 function App() {
   return (
     <center>
-      <h1>kodo</h1>
+      <h1>ant design added</h1>
     </center>
   );
 }
