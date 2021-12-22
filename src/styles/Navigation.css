@@ -16,3 +16,32 @@
 * {
   font-family: "Open Sans", sans-serif !important;
 }
+
+.nav_right {
+  display: flex;
+}
+.nav_right div:nth-child(1) {
+  margin-right: 10px;
+}
+.nav_right img {
+  width: 19px;
+  height: 19px;
+}
+.nav_right span {
+  font-size: 13px !important;
+}
+
+.icons {
+  display: flex;
+  justify-content: center;
+  align-content: center;
+  align-items: center;
+  transition: 0.5s;
+}
+.icons span {
+  margin-left: 5px;
+}
+
+.icons:hover {
+  cursor: pointer;
+}
