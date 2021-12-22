@@ -1,7 +1,7 @@
 function App() {
   return (
     <center>
-      <h1>slaw</h1>
+      <h1>kodo</h1>
     </center>
   );
 }
