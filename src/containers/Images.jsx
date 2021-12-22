@@ -1,4 +1,6 @@
 import React, { useEffect, useState } from "react";
+import { LazyLoadImage } from "react-lazy-load-image-component";
+import "react-lazy-load-image-component/src/effects/blur.css";
 import "../styles/Images.css";
 import axios from "axios";
 
@@ -17,13 +19,14 @@ export default function Images() {
     <div style={{ paddingBottom: 20 }}>
       <ul id="images">
         {images.map((image) => (
-          <li key={image.id}>
-            <img
-              loading="lazy"
-              src={image.download_url}
-              alt={`taken by author ${image.author}`}
-            />
-          </li>
+          <LazyLoadImage
+            key={image.id}
+            preview={false}
+            effect="blur"
+            //   loading="lazy"
+            src={image.download_url}
+            alt={`taken by author ${image.author}`}
+          />
         ))}
       </ul>
     </div>
