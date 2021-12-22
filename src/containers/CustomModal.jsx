@@ -21,9 +21,6 @@ export default function CustomModal(props) {
         MoreStyle={{ border: "none" }}
       />
       <AdditionalData />
-      {props.Selected.map((el) => (
-        <div style={{}}>{el}</div>
-      ))}
     </Modal>
   );
 }

@@ -10,6 +10,7 @@
 .customModal .ant-modal {
   border-radius: 5px !important;
   overflow: hidden !important;
+  margin: auto;
 }
 
 .customModal #navigation > span {
@@ -17,4 +18,24 @@
   transform: translateY(15px);
   font-size: 34px;
   /* display: none; */
+}
+
+@media only screen and (max-width: 550px) {
+  .customModal #navigation > span {
+    font-size: 20px;
+  }
+  .customModal .additional {
+    font-size: 10px !important;
+    padding: 10px 10px !important;
+  }
+  .customModal #CloseIcon {
+    position: static;
+    transform: translate(10px, 0px);
+  }
+  .customModal .nav_right {
+    transform: translate(-5px, 0px);
+  }
+  .customModal .nav_right div {
+    margin-right: 5px !important;
+  }
 }
