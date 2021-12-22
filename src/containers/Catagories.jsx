@@ -11,7 +11,7 @@ export default function Catagories() {
   return (
     <div id="catagories">
       {buttons.map((btn) => (
-        <MiddleButtons text={btn.text} classes={btn.class} />
+        <MiddleButtons key={btn.text} text={btn.text} classes={btn.class} />
       ))}
     </div>
   );
