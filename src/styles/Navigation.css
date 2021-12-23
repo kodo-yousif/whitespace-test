@@ -29,6 +29,7 @@
 }
 
 .icons {
+  position: relative;
   display: flex;
   justify-content: center;
   align-content: center;
@@ -64,4 +65,24 @@
   height: 24px;
   position: absolute;
   transform: translate(30px, 0px);
+}
+
+.alticon {
+  position: absolute;
+  left: 0px;
+  transform: translate(0px, -25px);
+}
+.go_go_icon,
+.alticon {
+  transition: 0.5s;
+}
+.scrollAnimateIcon {
+  overflow: hidden;
+}
+
+.scrollAnimateIcon:hover .alticon {
+  transform: translate(0px, 0px);
+}
+.scrollAnimateIcon:hover .go_go_icon {
+  transform: translate(0px, 25px);
 }
