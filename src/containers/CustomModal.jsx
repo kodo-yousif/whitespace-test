@@ -9,11 +9,25 @@ import axios from "axios";
 
 export default function CustomModal(props) {
   const [album, setalbum] = useState([]);
-  useEffect(getimages, []);
+  useEffect(getimages, [props.Selected]);
 
   function getimages() {
-    axios.get("https://picsum.photos/v2/list?page=2&limit=3").then((res) => {
-      setalbum(res.data);
+    setalbum([]);
+    let counter = 0;
+    let temp = [];
+    props.Selected.map((imageId) => {
+      axios
+        .get(`https://picsum.photos/id/${imageId}/info`)
+        .then((res) => {
+          counter++;
+          temp = [...temp, res.data];
+        })
+        .catch(() => {
+          counter++;
+        })
+        .finally(() => {
+          if (counter === 3) setalbum(temp);
+        });
     });
   }
   return (

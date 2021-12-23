@@ -10,7 +10,8 @@ export default function SingleImage(props) {
       alt={`taken by author ${props.author}`}
       onClick={() => {
         if (props.Switch) {
-          props.Select([props.id, props.id + 1, props.id + 2]);
+          let id = parseInt(props.id);
+          props.Select([id++, id++, id]);
           props.Switch(true);
         }
       }}
