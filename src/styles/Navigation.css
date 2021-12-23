@@ -76,13 +76,16 @@
 .alticon {
   transition: 0.5s;
 }
-.scrollAnimateIcon {
+.scrollAnimateIcon,
+.clickAnimateIcon {
   overflow: hidden;
 }
 
-.scrollAnimateIcon:hover .alticon {
+.scrollAnimateIcon:hover .alticon,
+.clickedAnimateIcon.clickAnimateIcon .alticon {
   transform: translate(0px, 0px);
 }
-.scrollAnimateIcon:hover .go_go_icon {
+.scrollAnimateIcon:hover .go_go_icon,
+.clickedAnimateIcon.clickAnimateIcon .go_go_icon {
   transform: translate(0px, 25px);
 }
