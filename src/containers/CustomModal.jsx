@@ -15,7 +15,7 @@ export default function CustomModal(props) {
     setalbum([]);
     let counter = 0;
     let temp = [];
-    props.Selected.map((imageId) => {
+    props.Selected.foreach((imageId) => {
       axios
         .get(`https://picsum.photos/id/${imageId}/info`)
         .then((res) => {
