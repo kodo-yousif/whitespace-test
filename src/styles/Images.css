@@ -52,6 +52,12 @@ every span so every span should be li basicaly
   }
 }
 
+@media only screen and (max-width: 425px) {
+  #images {
+    border-radius: 5px !important;
+  }
+}
+
 @media (max-aspect-ratio: 1/1) and (max-width: 480px) {
   #images {
     flex-direction: row;
