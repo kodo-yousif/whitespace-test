@@ -7,6 +7,7 @@ export default function SingleImage(props) {
     <LazyLoadImage
       effect="blur"
       src={props.src}
+      className="imageScale"
       alt={`taken by author ${props.author}`}
       onClick={() => {
         if (props.Switch) {

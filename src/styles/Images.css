@@ -22,6 +22,14 @@ every span so every span should be li basicaly
   transition: 0.5s !important;
 }
 
+.imageScale {
+  transition: 0.5s;
+}
+.imageScale:hover {
+  transform: scale(0.95);
+  border-radius: 5px;
+}
+
 #images span:last-child {
   flex-grow: 10;
 }
