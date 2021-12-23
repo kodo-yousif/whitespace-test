@@ -81,6 +81,9 @@
   overflow: hidden;
 }
 
+.scrollAnimateIcon:hover span {
+  color: red !important;
+}
 .scrollAnimateIcon:hover .alticon,
 .clickedAnimateIcon.clickAnimateIcon .alticon {
   transform: translate(0px, 0px);
