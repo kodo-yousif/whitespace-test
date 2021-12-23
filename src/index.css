@@ -13,3 +13,9 @@ body {
 * {
   font-family: "Open Sans", sans-serif !important;
 }
+.redHover {
+  transition: 0.5s;
+}
+.redHover:hover {
+  color: #d91323 !important;
+}

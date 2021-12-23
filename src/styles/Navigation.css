@@ -9,6 +9,7 @@
 }
 
 #navigation span {
+  cursor: pointer;
   color: #2c463f;
   font-size: 25px;
 }

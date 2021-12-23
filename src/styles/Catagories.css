@@ -26,6 +26,9 @@
   font-size: 17px !important;
 }
 
+#catagories button.active:hover {
+  border-color: #d91323;
+}
 @media only screen and (max-width: 425px) {
   #catagories {
     margin: 20px 12px;

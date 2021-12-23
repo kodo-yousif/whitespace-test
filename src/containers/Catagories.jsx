@@ -4,9 +4,12 @@ import MiddleButtons from "../components/MiddleButtons";
 
 export default function Catagories() {
   const buttons = [
-    { class: "active", text: "Photo & Videos" },
-    { text: "Map" },
-    { text: "360 View" },
+    {
+      class: "active redHover",
+      text: "Photo & Videos",
+    },
+    { text: "Map", class: "redHover" },
+    { text: "360 View", class: "redHover" },
   ];
   return (
     <div id="catagories">

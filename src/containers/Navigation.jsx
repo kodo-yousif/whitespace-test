@@ -5,7 +5,7 @@ import "../styles/Navigation.css";
 export default function Navigation(props) {
   return (
     <div id="navigation" style={props.MoreStyle}>
-      <span>Empire World</span>
+      <span className="redHover">Empire World</span>
       <NavigationRightIcons
         additional={props.additional}
         switch={props.switch}

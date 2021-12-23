@@ -8,11 +8,11 @@ export default function NavigationRightIcons(props) {
     <div className="nav_right">
       <div className="icons">
         <img src={ShareIcon} alt="share icon" />
-        <span>Share</span>
+        <span className="redHover">Share</span>
       </div>
       <div className="icons">
         <img src={HeartIcon} id="heart_icon" alt="heart icon" />
-        {props.additional ? <span>Save</span> : ""}
+        {props.additional ? <span className="redHover">Save</span> : ""}
       </div>
       {props.additional && (
         <div className="icons" onClick={() => props.switch(false)}>
